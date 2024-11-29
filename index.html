@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UNIX - Pathname</title>
+  <title>Unix Subject Details</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -22,22 +22,13 @@
       border-radius: 8px;
     }
 
-    h1 {
+    h1, h2 {
       color: #0056b3;
     }
 
-    h2, h3 {
-      color: #333;
-    }
-
-    p, ul {
+    p, ul, ol {
       margin: 15px 0;
       line-height: 1.6;
-    }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
     }
 
     a {
@@ -48,27 +39,29 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .learn-more {
+      padding: 10px 15px;
+      background-color: #0056b3;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .learn-more:hover {
+      background-color: #003f7f;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Subject: UNIX</h1>
-    <p><strong>Code:</strong> 566VVF1</p>
+    <h1>Unix Subject: Pathnames</h1>
+    <p>Learn about the components of pathnames in Unix and how they are used to locate files and directories.</p>
 
-    <h2>Pathname</h2>
-    <p>
-      A pathname is the complete address or location of a file or directory in a file system.
-      It is used to access files and directories in operating systems like UNIX.
-    </p>
+    <h2>What is a Pathname?</h2>
+    <p>A pathname refers to the location of a file or directory within the file system. It can be either a relative or absolute path.</p>
 
-    <h3>Types of Pathnames</h3>
-    <ul>
-      <li><strong>Absolute Path:</strong> The full path starting from the root directory (e.g., `/home/user/docs/file.txt`).</li>
-      <li>
-        <strong>Relative Path:</strong> The path relative to the current working directory. 
-        <a href="details.html">Learn more</a>
-      </li>
-    </ul>
+    <a href="details.html" class="learn-more">Learn more about Relative Paths</a>
   </div>
 </body>
 </html>
