@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        table {
+            width: 80%;
+            margin: 2rem auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Subject List</h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th>Subject Name</th>
+                <th>Code</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>Data Structures</td>
+                <td>CS201</td>
+                <td><a href="details.html?type=theory&name=Data+Structures">Theory</a></td>
+            </tr>
+            <tr>
+                <td>Digital Logic</td>
+                <td>CS202</td>
+                <td><a href="details.html?type=theory&name=Digital+Logic">Theory</a></td>
+            </tr>
+            <tr>
+                <td>Microprocessors Lab</td>
+                <td>CS203</td>
+                <td><a href="details.html?type=practical&name=Microprocessors+Lab">Practical</a></td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
