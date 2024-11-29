@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subjects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        table {
-            width: 80%;
-            margin: 2rem auto;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 0.8rem;
-            text-align: center;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNIX - Pathname</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #0056b3;
+    }
+
+    h2, h3 {
+      color: #333;
+    }
+
+    p, ul {
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Subject List</h1>
-    </header>
-    <main>
-        <table>
-            <tr>
-                <th>Subject Name</th>
-                <th>Code</th>
-                <th>Type</th>
-            </tr>
-            <tr>
-                <td>Data Structures</td>
-                <td>CS201</td>
-                <td><a href="details.html?type=theory&name=Data+Structures">Theory</a></td>
-            </tr>
-            <tr>
-                <td>Digital Logic</td>
-                <td>CS202</td>
-                <td><a href="details.html?type=theory&name=Digital+Logic">Theory</a></td>
-            </tr>
-            <tr>
-                <td>Microprocessors Lab</td>
-                <td>CS203</td>
-                <td><a href="details.html?type=practical&name=Microprocessors+Lab">Practical</a></td>
-            </tr>
-        </table>
-    </main>
+  <div class="container">
+    <h1>Subject: UNIX</h1>
+    <p><strong>Code:</strong> 566VVF1</p>
+
+    <h2>Pathname</h2>
+    <p>
+      A pathname is the complete address or location of a file or directory in a file system.
+      It is used to access files and directories in operating systems like UNIX.
+    </p>
+
+    <h3>Types of Pathnames</h3>
+    <ul>
+      <li><strong>Absolute Path:</strong> The full path starting from the root directory (e.g., `/home/user/docs/file.txt`).</li>
+      <li>
+        <strong>Relative Path:</strong> The path relative to the current working directory. 
+        <a href="relative-path.html">Learn more</a>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
