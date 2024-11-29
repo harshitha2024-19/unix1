@@ -22,26 +22,17 @@
       border-radius: 8px;
     }
 
-    h1 {
+    h1, h2, h3 {
       color: #0056b3;
     }
 
-    h2 {
-      color: #333;
-    }
-
-    p, pre {
+    p, ul, pre, ol {
       margin: 15px 0;
       line-height: 1.6;
     }
 
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    ul, ol {
+      margin-left: 20px;
     }
 
     img {
@@ -51,6 +42,15 @@
       height: auto;
       border: 1px solid #ddd;
       border-radius: 5px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     .back-link {
@@ -73,7 +73,7 @@
     <h1>Relative Path</h1>
     <p>
       A relative path specifies the location of a file or directory in relation to the current directory.
-      It does not start with the root (`/`) but rather from the current working directory.
+      It is commonly used when navigating a file system or referencing files in code.
     </p>
 
     <h2>Example:</h2>
@@ -82,8 +82,54 @@
     </p>
     <pre>docs/file.txt</pre>
 
+    <h2>Key Components in a Pathname:</h2>
+    <ul>
+      <li><strong>`.`</strong>: Refers to the current directory.</li>
+      <li><strong>`..`</strong>: Refers to the parent directory (one level up).</li>
+      <li><strong>`~`</strong>: Represents the home directory of the current user.</li>
+    </ul>
+    <p>
+      <strong>Examples:</strong>
+    </p>
+    <ul>
+      <li><code>./script.sh</code>: Refers to a script in the current directory.</li>
+      <li><code>../docs/file.txt</code>: Refers to a file in the parent directory's "docs" folder.</li>
+      <li><code>~/projects/code.py</code>: Refers to the "code.py" file in the "projects" folder within the home directory.</li>
+    </ul>
+
+    <h2>Steps to Find a Pathname:</h2>
+    <ol>
+      <li>
+        <strong>Step 1:</strong> Open a terminal (e.g., Cygwin, Command Prompt, or Bash).
+        <p>Example: Launch the Cygwin terminal.</p>
+      </li>
+      <li>
+        <strong>Step 2:</strong> Use the <code>pwd</code> command to display the current working directory.
+        <p>Example:</p>
+        <pre>$ pwd
+/home/user</pre>
+      </li>
+      <li>
+        <strong>Step 3:</strong> List the files and directories in the current directory using the <code>ls</code> command.
+        <p>Example:</p>
+        <pre>$ ls
+docs  script.sh</pre>
+      </li>
+      <li>
+        <strong>Step 4:</strong> Navigate to the desired directory using <code>cd</code>.
+        <p>Example:</p>
+        <pre>$ cd docs</pre>
+      </li>
+      <li>
+        <strong>Step 5:</strong> Identify the relative or absolute path of the desired file.
+        <p>Example:</p>
+        <pre>Relative Path: docs/file.txt
+Absolute Path: /home/user/docs/file.txt</pre>
+      </li>
+    </ol>
+
     <h3>Illustration:</h3>
-    <img src="images/relative-path-example.png" alt="Relative Path Example" width="400">
+    <img src="images/cygwin-example.png" alt="Cygwin Terminal Example" width="400">
 
     <a href="index.html" class="back-link">Back to UNIX Details</a>
   </div>
