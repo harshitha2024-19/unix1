@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subject Details</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 2rem;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        .content {
-            max-width: 800px;
-            margin: auto;
-            padding: 1rem;
-            border: 1px solid #ddd;
-            background: #f9f9f9;
-        }
-        h2 {
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relative Path</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #0056b3;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p, pre {
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      display: block;
+      margin: 20px 0;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #0056b3;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      background-color: #003f7f;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Subject Details</h1>
-    </header>
-    <div class="content">
-        <h2>Details of the Subject</h2>
-        <p><strong>Type:</strong> Replace with dynamic type.</p>
-        <p><strong>Example:</strong> Replace with example content.</p>
-        <a href="index.html">Back to Subjects</a>
-    </div>
+  <div class="container">
+    <h1>Relative Path</h1>
+    <p>
+      A relative path specifies the location of a file or directory in relation to the current directory.
+      It does not start with the root (`/`) but rather from the current working directory.
+    </p>
+
+    <h2>Example:</h2>
+    <p>
+      If your current directory is `/home/user/` and you want to access `file.txt` in the `docs` folder:
+    </p>
+    <pre>docs/file.txt</pre>
+
+    <h3>Illustration:</h3>
+    <img src="images/relative-path-example.png" alt="Relative Path Example" width="400">
+
+    <a href="index.html" class="back-link">Back to UNIX Details</a>
+  </div>
 </body>
 </html>
