@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -114,10 +114,179 @@ Absolute Path: /home/user/docs/file.txt</pre>
     </ol>
 
     <h3>Illustration:</h3>
-    <!-- Image Placeholder (update with your actual image path) -->
+    <!-- Image Placeholder (update with your actual image path) 
     <img src="images/cygwin-example.png" alt="Cygwin Terminal Example" width="400">
 
     <a href="index.html" class="back-link">Back to UNIX Details</a>
   </div>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Path in Unix</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .assignment-title {
+            text-align: center;
+            background: #0073e6;
+            color: white;
+            padding: 15px;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .command-section {
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .command-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .command-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .command-section pre {
+            background-color: #282c34;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            margin-top: 40px;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: #4e73df;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .command-section {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="assignment-title">UNIX Assignment: Relative Path</div>
+    <header>
+        <h1>Relative Path in Unix</h1>
+    </header>
+
+    <div class="command-section">
+        <h2>Relative Path</h2>
+        <p>A relative path specifies the location of a file or directory in relation to the current directory. It is commonly used when navigating a file system or referencing files in code.</p>
+        <pre>Usage:
+$ docs/file.txt
+</pre>
+        <p>Example:</p>
+        <pre>Current Directory: /home/user/
+Target File: /home/user/docs/file.txt
+Relative Path: docs/file.txt
+</pre>
+    </div>
+
+    <div class="command-section">
+        <h2>Key Components in a Pathname:</h2>
+        <ul>
+            <li><strong>`.`</strong>: Refers to the current directory.</li>
+            <li><strong>`..`</strong>: Refers to the parent directory (one level up).</li>
+            <li><strong>`~`</strong>: Represents the home directory of the current user.</li>
+        </ul>
+        <p>Example:</p>
+        <pre>Usage:
+$ ./script.sh
+$ ../docs/file.txt
+$ ~/projects/code.py
+</pre>
+    </div>
+
+    <div class="command-section">
+        <h2>Steps to Find a Pathname:</h2>
+        <ol>
+            <li><strong>Step 1:</strong> Open a terminal (e.g., Cygwin, Command Prompt, or Bash).</li>
+            <li><strong>Step 2:</strong> Use the <code>pwd</code> command to display the current working directory.
+                <pre>$ pwd
+/home/user</pre>
+            </li>
+            <li><strong>Step 3:</strong> List the files and directories in the current directory using the <code>ls</code> command.
+                <pre>$ ls
+docs  script.sh</pre>
+            </li>
+            <li><strong>Step 4:</strong> Navigate to the desired directory using <code>cd</code>.
+                <pre>$ cd docs</pre>
+            </li>
+            <li><strong>Step 5:</strong> Identify the relative or absolute path of the desired file.
+                <pre>Relative Path: docs/file.txt
+Absolute Path: /home/user/docs/file.txt</pre>
+            </li>
+        </ol>
+    </div>
+
+    <footer>
+        <p>For more information, visit <a href="index.html">UNIX Details</a></p>
+    </footer>
 </body>
 </html>
