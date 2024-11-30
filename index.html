@@ -6,54 +6,77 @@
   <title>Unix Subject Details</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; }
-    header { display: flex; align-items: center; padding: 20px 40px; background-color: #ffffff; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); }
+    body { font-family: Arial, sans-serif; background-color: #f4f4f9; color: #333; }
 
-    .logo { display: flex; align-items: center; }
+    /* Header Section Styles */
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-    .logo img { width: 200px; height: auto; margin-right: 20px; border: none; outline: none; }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img { 
+      width: 150px; 
+      height: auto; 
+      margin-right: 20px; 
+      border: none; 
+      outline: none; 
+    }
 
     .logo-text {
-      font-size: 60px; /* Reduced size of GSSS */
+      font-size: 40px; /* Adjusted size for GSSS */
       color: #6a0dad; 
       font-weight: bold; 
       text-transform: uppercase; 
-      display: inline-block;
     }
 
     .geetha-info {
-      font-size: 24px; /* Reduced font size for Geetha and Shikshana */
+      font-size: 18px; /* Adjusted font size for Geetha and Shikshana */
       color: #6a0dad; 
       font-weight: bold;
-      margin-left: 0; /* No margin for Geetha Shishu */
-      line-height: 1.2;
     }
 
-    .geetha-info:first-child {
-      margin-left: 0;
-    }
-
-    .geetha-info:last-child {
-      font-size: 22px; 
-      margin-left: 0;
-      margin-top: 0;
-    }
-
-    .institution-info { font-size: 20px; color: #333; font-weight: normal; margin-top: 15px; }
+    .institution-info { font-size: 20px; color: #333; font-weight: normal; margin-top: 10px; }
     .affiliated-info { font-size: 16px; color: #6a0dad; font-weight: normal; margin-top: 5px; }
 
-    .right-section { display: flex; flex-direction: column; align-items: flex-start; text-align: left; width: 50%; }
-
-    .accreditation { display: flex; justify-content: space-between; width: 100%; margin-top: 20px; }
-    .accreditation .column { flex: 1; padding: 0 20px; text-align: center; color: #333; }
-    .accreditation .column h3 { font-size: 24px; font-weight: bold; margin-bottom: 8px; } /* Increased size of NBA and NAAC */
-    .accreditation .column p { font-size: 16px; margin-top: 5px; }
-
-    body {
-      background-color: #f4f4f9;
-      color: #333;
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      width: 50%;
     }
 
+    .accreditation {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .accreditation .column { 
+      flex: 1; 
+      padding: 0 20px; 
+      text-align: center; 
+      color: #333; 
+    }
+
+    .accreditation .column h3 {
+      font-size: 22px; 
+      font-weight: bold; 
+      margin-bottom: 8px;
+    }
+
+    .accreditation .column p { font-size: 14px; margin-top: 5px; }
+
+    /* Content Section Styles */
     .container {
       max-width: 800px;
       margin: 50px auto;
@@ -65,11 +88,14 @@
 
     h1, h2 {
       color: #0056b3;
+      font-size: 28px; /* Adjusted to be similar to header text */
+      margin-bottom: 10px;
     }
 
     p, ul, ol {
       margin: 15px 0;
       line-height: 1.6;
+      font-size: 16px; /* Consistent with text in the header */
     }
 
     a {
@@ -98,23 +124,18 @@
 
   <!-- GSSS Institute Header -->
   <header>
-    <!-- Left Section: Logo and Title -->
     <div class="logo">
       <img src="https://gyaanarth.com/wp-content/uploads/2022/07/GSSS-Institute-of-Engineering-and-Technology-for-Women-GSSSIETW-Mysore.logo_.jpg" alt="GSSS Logo">
       <div>
-        <div class="logo-text">GSSS</div> <!-- GSSS text -->
-        <div style="display: inline-block;">
-          <div class="geetha-info">Geetha Shishu</div> <!-- Geetha Shishu beside GSSS -->
-          <div class="geetha-info">Shikshana Sangha (R)</div> <!-- Shikshana Sangha (R) beside Geetha Shishu -->
-        </div>
-        <bold><div class="institution-info">Institute of Engineering and Technology for Women</div></bold>
+        <div class="logo-text">GSSS</div>
+        <div class="geetha-info">Geetha Shishu</div>
+        <div class="geetha-info">Shikshana Sangha (R)</div>
+        <div class="institution-info">Institute of Engineering and Technology for Women</div>
         <div class="affiliated-info">(Affiliated to Visvesvaraya Technological University, Belagavi, Approved by AICTE New Delhi & Govt of Karnataka)</div>
       </div>
     </div>
 
-    <!-- Right Section: Accreditation Info (NBA & NAAC) -->
     <div class="right-section">
-      <!-- Accreditation Info (NBA & NAAC in the same row) -->
       <div class="accreditation">
         <div class="column nba">
           <h3>NBA</h3>
@@ -132,7 +153,7 @@
     </div>
   </header>
 
-  <!-- Unix Subject: Pathnames -->
+  <!-- Unix Subject Details Section -->
   <div class="container">
     <h1>Unix Subject: Pathnames</h1>
     <p>Learn about the components of pathnames in Unix and how they are used to locate files and directories.</p>
@@ -145,4 +166,5 @@
 
 </body>
 </html>
+
 
